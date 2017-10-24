@@ -1,0 +1,38 @@
+{
+  "name": "yang-plugin-bootstrap",
+  "version": "0.2.0",
+  "description": "Yet Another Angular Generator - powered by Yeoman & Webpack",
+  "repository": "",
+  "license": "MIT",
+  "author": {
+    "name": "Michel Selerin",
+    "email": "michel.selerin@outlook.com"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc --pretty",
+    "test": "ts-mocha test/**/*.spec.ts",
+    "watch": "npm run build -- --watch",
+    "preversion": "npm run build"
+  },
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "devDependencies": {
+    "@types/chai": "^4.0.0",
+    "@types/mocha": "^2.2.43",
+    "@types/node": "^8.0.45",
+    "@types/sinon": "^2.3.6",
+    "@types/yargs": "^8.0.2",
+    "@types/yeoman-generator": "^1.0.4",
+    "chai": "^4.0.1",
+    "mocha": "^4.0.1",
+    "rimraf": "^2.6.2",
+    "sinon": "^4.0.1",
+    "ts-mocha": "^1.0.3",
+    "ts-node": "^3.0.4",
+    "typescript": "^2.5.3"
+  },
+  "dependencies": {
+    "yang-cli": "^0.5.0"
+  }
+}
