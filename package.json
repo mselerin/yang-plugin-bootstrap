@@ -2,7 +2,10 @@
   "name": "yang-plugin-bootstrap",
   "version": "0.2.0",
   "description": "Yang - Plugin Bootstrap",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mselerin/yang-plugin-bootstrap"
+  },
   "license": "MIT",
   "author": {
     "name": "Michel Selerin",
