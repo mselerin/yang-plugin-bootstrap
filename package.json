@@ -1,7 +1,7 @@
 {
   "name": "yang-plugin-bootstrap",
   "version": "0.2.0",
-  "description": "Yet Another Angular Generator - powered by Yeoman & Webpack",
+  "description": "Yang - Plugin Bootstrap",
   "repository": "",
   "license": "MIT",
   "author": {
@@ -13,26 +13,30 @@
     "build": "npm run clean && tsc --pretty",
     "test": "ts-mocha test/**/*.spec.ts",
     "watch": "npm run build -- --watch",
-    "preversion": "npm run build"
+    "preversion": "npm run build",
+    "prepack": "npm run build"
   },
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "dist/src/index.js",
+  "typings": "dist/src/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
   "devDependencies": {
-    "@types/chai": "^4.0.0",
-    "@types/mocha": "^2.2.43",
-    "@types/node": "^8.0.45",
-    "@types/sinon": "^2.3.6",
-    "@types/yargs": "^8.0.2",
-    "@types/yeoman-generator": "^1.0.4",
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "^2.2.48",
+    "@types/node": "^8.0.46",
+    "@types/sinon": "^4.1.2",
+    "@types/yargs": "^10.0.1",
     "chai": "^4.0.1",
-    "mocha": "^4.0.1",
+    "mocha": "^4.1.0",
     "rimraf": "^2.6.2",
-    "sinon": "^4.0.1",
-    "ts-mocha": "^1.0.3",
-    "ts-node": "^3.0.4",
-    "typescript": "^2.5.3"
+    "sinon": "^4.2.2",
+    "ts-mocha": "^1.1.0",
+    "ts-node": "^4.1.0",
+    "typescript": "^2.7.1"
   },
   "dependencies": {
-    "yang-cli": "^0.5.0"
+    "yang-cli": "^1.0.0"
   }
 }
